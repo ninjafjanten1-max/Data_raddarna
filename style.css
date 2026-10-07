@@ -97,3 +97,18 @@ footer p { margin: 0; }
   .hero { grid-template-columns: 1fr; }
   .card-art { order: -1; width: min(100%, 300px); justify-self: start; }
 }
+
+/* Reglage för Insane Epic Mode */
+.iem {
+  display: inline-flex; align-items: center; gap: .6rem; padding: .35rem .6rem .35rem .9rem;
+  border: 2px solid var(--ink); border-radius: 999px; color: var(--ink);
+  font: 700 .85rem var(--display); text-decoration: none;
+}
+.iem:hover { border-color: var(--teal); color: var(--teal); }
+.iem:focus-visible { outline: 3px solid var(--amber); outline-offset: 3px; }
+.iem-short { display: none; }
+.iem .switch { position: relative; width: 38px; height: 20px; border-radius: 999px; background: #9FB0BF; transition: background .25s; }
+.iem .switch i { position: absolute; top: 2px; left: 2px; width: 16px; height: 16px; border-radius: 50%; background: #fff; transition: transform .25s; }
+.iem.flip .switch { background: var(--teal); }
+.iem.flip .switch i { transform: translateX(18px); }
+@media (max-width: 600px) { .iem-long { display: none; } .iem-short { display: inline; } }
