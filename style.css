@@ -56,7 +56,7 @@ p { max-width: 65ch; margin: 0 0 1em; }
 .btn.primary { background: var(--teal); border-color: var(--teal); color: #fff; }
 .btn.primary:hover { background: var(--ink); border-color: var(--ink); }
 
-.card-art { margin: 0; justify-self: center; width: min(100%, 520px); aspect-ratio: 3 / 2; background: #000; border-radius: 12px; overflow: hidden; }
+.card-art { margin: 0; justify-self: center; width: min(100%, 340px); aspect-ratio: 3 / 2; background: #000; border-radius: 12px; overflow: hidden; }
 .card-art img { display: block; width: 108%; max-width: none; height: auto; margin: -18.3% 0 0 -4%; }
 
 .band {
@@ -95,5 +95,5 @@ footer p { margin: 0; }
 
 @media (max-width: 760px) {
   .hero { grid-template-columns: 1fr; }
-  .card-art { order: -1; width: 100%; }
+  .card-art { order: -1; width: min(100%, 300px); justify-self: start; }
 }
