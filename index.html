@@ -20,6 +20,10 @@
     <a href="#sa-funkar-det">Så går det till</a>
     <a href="#kontakt">Kontakt</a>
   </nav>
+  <a class="iem" href="Insane.html" title="Slå på Insane Epic Mode" aria-label="Slå på Insane Epic Mode (IEM)">
+    <span class="iem-long">Insane Epic Mode</span><span class="iem-short">IEM</span>
+    <span class="switch" aria-hidden="true"><i></i></span>
+  </a>
 </header>
 
 <main id="top">
@@ -97,6 +101,19 @@
   <p>© <span id="year">2026</span> DataRäddarna Lund. Dataåterställning och reparation av elektronik.</p>
 </footer>
 
+<script>
+  (function () {
+    var t = document.querySelector('.iem');
+    if (!t) return;
+    t.addEventListener('click', function (e) {
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
+      e.preventDefault();
+      t.classList.add('flip');
+      var calm = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      setTimeout(function () { location.href = t.href; }, calm ? 0 : 380);
+    });
+  })();
+</script>
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
