@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DataRäddarna Lund – Insane Epic Mode</title>
+  <meta name="description" content="Dataåterställning och reparation av elektronik i Lund, i Insane Epic Mode. Vi försöker rädda dina bilder och filer innan du behöver köpa nytt.">
+  <script>if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('fx');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="Data.png">
+  <link rel="stylesheet" href="Insane.css">
+</head>
+<body>
+
+<canvas id="warp" aria-hidden="true"></canvas>
+<div class="glow" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"><i></i></div>
+
+<header class="top">
+  <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"></span>DataRäddarna <span>Lund</span></a>
+  <nav aria-label="Huvudmeny">
+    <a href="#tjanster">Tjänster</a>
+    <a href="#sa-funkar-det">Så går det till</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+  <a class="iem flip" href="index.html" title="Stäng av Insane Epic Mode och gå till den vanliga sidan" aria-label="Stäng av Insane Epic Mode (IEM) och gå till den vanliga sidan">
+    <span class="iem-long">Insane Epic Mode</span><span class="iem-short">IEM</span>
+    <span class="switch" aria-hidden="true"><i></i></span>
+  </a>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-copy">
+      <h1 data-split>Din data är inte borta förrän vi har tittat på den.</h1>
+      <p class="lead">Vi återställer bilder, dokument och filer från trasiga datorer, mobiler, kameror, minneskort och hårddiskar. Och vi reparerar det som går att reparera, innan någon säger åt dig att köpa nytt.</p>
+      <p class="actions">
+        <a class="btn primary" href="#kontakt">Berätta vad som hänt</a>
+        <a class="btn" href="#tjanster">Se vad vi gör</a>
+      </p>
+    </div>
+
+    <div class="stage">
+      <figure class="logo3d">
+        <span class="bit b1" aria-hidden="true"></span>
+        <span class="bit b2" aria-hidden="true"></span>
+        <span class="bit b3" aria-hidden="true"></span>
+        <span class="bit b4" aria-hidden="true"></span>
+        <div class="plate">
+          <img src="Data.png" alt="DataRäddarna – Rädda din data. Dataåterställning, reparation, återbruk" width="1254" height="1254">
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <section class="chip-section" aria-labelledby="chip-rubrik">
+    <div class="chip-text">
+      <h2 id="chip-rubrik" class="rise">När vanlig dataåterställning inte räcker</h2>
+      <p class="rise">Är ett minneskort kraftigt skadat kan vi arbeta direkt med minneskretsarna för att försöka läsa av och återskapa den lagrade informationen. Det är metoden vi använder när andra konstaterat att det inte går.</p>
+    </div>
+    <div class="scene" aria-hidden="true">
+      <div class="cube">
+        <div class="f f1">DATA</div>
+        <div class="f f2">RÄDDA</div>
+        <div class="f f3">DIN</div>
+        <div class="f f4">CHIP</div>
+        <div class="f f5">OFF</div>
+        <div class="f f6">LUND</div>
+        <div class="core">
+          <i class="c c1"></i><i class="c c2"></i><i class="c c3"></i><i class="c c4"></i><i class="c c5"></i><i class="c c6"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tjanster" class="services">
+    <h2 class="rise">Vad vi hjälper till med</h2>
+    <div class="grid">
+      <article class="card">
+        <div class="card-in">
+          <h3>Dataåterställning</h3>
+          <p>Bilder, dokument och annan viktig information från skadade, låsta eller otillgängliga enheter: datorer, mobiltelefoner, kameror, minneskort, externa hårddiskar och andra lagringsenheter.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-in">
+          <h3>Reparation</h3>
+          <p>Trasig skärm, dator som inte startar, kamera som slutat fungera. Vi undersöker först om produkten går att laga, så att du kan behålla den.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-in">
+          <h3>Köp begagnat och nytt</h3>
+          <p>Går något inte att reparera, eller blir det dyrare än produkten är värd, har vi prisvärda datorer, mobiler och annan elektronik. Med reparationsgaranti och möjlighet till försäkring där det är tillämpligt.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-in">
+          <h3>Uthyrning</h3>
+          <p>Behöver du en produkt under en kortare tid, eller medan din egen repareras? Vi hyr ut vissa produkter.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-in">
+          <h3>Vi köper din begagnade elektronik</h3>
+          <p>Har du elektronik med ekonomiskt värde som du inte använder? Vi kan köpa in den, reparera och testa den och sälja den vidare. Då får produkten ett längre liv.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="sa-funkar-det" class="tunnel">
+    <div class="tunnel-sticky">
+      <div class="tunnel-head">
+        <h2>Så går det till</h2>
+      </div>
+      <ol class="steps">
+        <li class="step">
+          <span class="num" aria-hidden="true">1</span>
+          <div><h3>Lämna in eller skicka</h3><p>Kom förbi oss i Lund, eller skicka produkten med post om du bor längre bort.</p></div>
+        </li>
+        <li class="step">
+          <span class="num" aria-hidden="true">2</span>
+          <div><h3>Vi undersöker</h3><p>Vi tittar på om produkten går att reparera och om din data går att rädda.</p></div>
+        </li>
+        <li class="step">
+          <span class="num" aria-hidden="true">3</span>
+          <div><h3>Du får ett ärligt besked</h3><p>Om reparationen eller återställningen skulle kosta mer än produkten är värd för dig säger vi det, och du bestämmer.</p></div>
+        </li>
+        <li class="step">
+          <span class="num" aria-hidden="true">4</span>
+          <div><h3>Du får tillbaka dina saker</h3><p>Reparerad produkt, räddade filer, eller ett prisvärt alternativ.</p></div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="kontakt" class="contact">
+    <h2 class="rise">Kontakta oss</h2>
+    <p class="rise">Beskriv vilken produkt det gäller och vad som har hänt. Skriv gärna vad du absolut vill få tillbaka. Stäng av enheten och försök inte laga den själv om informationen är viktig.</p>
+    <div class="panel">
+      <dl>
+        <dt>Besöksadress</dt><dd>Gatuadress 1, 222 22 Lund</dd>
+        <dt>Telefon</dt><dd><a href="tel:+46000000000">046-00 00 00</a></dd>
+        <dt>E-post</dt><dd><a href="mailto:info@exempel.se">info@exempel.se</a></dd>
+        <dt>Öppettider</dt><dd>Vardagar 10–17</dd>
+      </dl>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>© <span id="year">2026</span> DataRäddarna Lund. Dataåterställning och reparation av elektronik.</p>
+</footer>
+
+<script src="Insane.js" defer></script>
+</body>
+</html>
