@@ -1,9 +1,9 @@
 :root {
   box-sizing: border-box;
-  --ink: #12262E;
-  --paper: #F2F4F3;
-  --teal: #0E7C7B;
-  --amber: #D9A441;
+  --ink: #0A1620;
+  --paper: #F3F6F9;
+  --teal: #1473E6;
+  --amber: #4DB2FF;
   --line: #C9D3D1;
   --display: "Bricolage Grotesque", "Trebuchet MS", system-ui, sans-serif;
   --body: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -33,7 +33,8 @@ p { max-width: 65ch; margin: 0 0 1em; }
   padding: 1rem clamp(1rem, 5vw, 4rem);
   border-bottom: 1px solid var(--line);
 }
-.brand { font: 800 1.35rem var(--display); color: var(--ink); text-decoration: none; }
+.brand { display: inline-flex; align-items: center; gap: .6rem; font: 800 1.35rem var(--display); color: var(--ink); text-decoration: none; }
+.brand img { height: 40px; width: auto; background: #000; border-radius: 6px; }
 .brand span { color: var(--teal); }
 .top nav { display: flex; gap: 1.5rem; }
 .top nav a { color: var(--ink); text-decoration: none; font-weight: 500; }
@@ -55,8 +56,8 @@ p { max-width: 65ch; margin: 0 0 1em; }
 .btn.primary { background: var(--teal); border-color: var(--teal); color: #fff; }
 .btn.primary:hover { background: var(--ink); border-color: var(--ink); }
 
-.card-art { margin: 0; justify-self: center; width: min(100%, 340px); }
-.card-art svg { width: 100%; height: auto; display: block; }
+.card-art { margin: 0; justify-self: center; width: min(100%, 520px); background: #000; border-radius: 12px; overflow: hidden; }
+.card-art img { width: 100%; height: auto; display: block; }
 
 .band {
   background: var(--ink); color: var(--paper);
@@ -74,7 +75,7 @@ p { max-width: 65ch; margin: 0 0 1em; }
 .grid article { border-top: 3px solid var(--teal); padding-top: 1rem; }
 .grid p { margin: 0; }
 
-.steps-section { background: #E4EAE8; }
+.steps-section { background: #E3EAF1; }
 .steps { padding-left: 1.3rem; max-width: 65ch; margin: 0; }
 .steps li { margin-bottom: 1rem; padding-left: .3rem; }
 .steps li::marker { font-family: var(--display); font-weight: 800; color: var(--teal); }
@@ -94,5 +95,5 @@ footer p { margin: 0; }
 
 @media (max-width: 760px) {
   .hero { grid-template-columns: 1fr; }
-  .card-art { order: -1; width: min(60%, 240px); justify-self: start; }
+  .card-art { order: -1; width: 100%; }
 }
