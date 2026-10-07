@@ -34,7 +34,7 @@ p { max-width: 65ch; margin: 0 0 1em; }
   border-bottom: 1px solid var(--line);
 }
 .brand { display: inline-flex; align-items: center; gap: .6rem; font: 800 1.35rem var(--display); color: var(--ink); text-decoration: none; }
-.brand img { height: 40px; width: auto; background: #000; border-radius: 6px; }
+.brand-mark { flex: none; width: 46px; height: 40px; border-radius: 6px; background: #000 url("Data.png") -32px -20px / 111px auto no-repeat; }
 .brand span { color: var(--teal); }
 .top nav { display: flex; gap: 1.5rem; }
 .top nav a { color: var(--ink); text-decoration: none; font-weight: 500; }
@@ -56,8 +56,8 @@ p { max-width: 65ch; margin: 0 0 1em; }
 .btn.primary { background: var(--teal); border-color: var(--teal); color: #fff; }
 .btn.primary:hover { background: var(--ink); border-color: var(--ink); }
 
-.card-art { margin: 0; justify-self: center; width: min(100%, 520px); background: #000; border-radius: 12px; overflow: hidden; }
-.card-art img { width: 100%; height: auto; display: block; }
+.card-art { margin: 0; justify-self: center; width: min(100%, 520px); aspect-ratio: 3 / 2; background: #000; border-radius: 12px; overflow: hidden; }
+.card-art img { display: block; width: 108%; max-width: none; height: auto; margin: -18.3% 0 0 -4%; }
 
 .band {
   background: var(--ink); color: var(--paper);
